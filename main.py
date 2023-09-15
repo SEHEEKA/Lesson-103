@@ -25,16 +25,11 @@ class FileMovementHandler(FileSystemEventHandler):
 
     def on_created(self, event):
 
-        name, extension = os.path.splitext(event.src_path)
+        
        
         time.sleep(1)
 
-        for key, value in dir_tree.items():
-            time.sleep(1)
-
-            if extension in value:
-
-                file_name = os.path.basename(event.src_path)
+        
                
                 print("Downloaded " + file_name)
 
